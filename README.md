@@ -10,8 +10,8 @@ Built to overcome the limitations of monolithic systems, InstaBuy ensures effici
 
 # ✨ Project Highlights
 
-✅ Microservices-Based Architecture
-✅ Distributed Order Management System (OMS)
+✅ Microservices-Based Architecture /n
+✅ Distributed Order Management System (OMS) \n
 ✅ REST API Communication Between Services
 ✅ JWT-Based Authentication & Authorization
 ✅ Inventory Validation & Stock Management
