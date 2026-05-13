@@ -1,0 +1,51 @@
+:root {
+  --sap-primary: #0a6ed1;
+  --sap-primary-hover: #085caf;
+  --sap-bg: #f5f7fa;
+  --sap-card-bg: #ffffff;
+  --sap-text: #32363a;
+  --sap-text-muted: #6a6d70;
+  --sap-border: #d9d9d9;
+  --sap-error: #bb0000;
+  --sap-font-family: "72", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--sap-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--sap-bg);
+  color: var(--sap-text);
+  line-height: 1.5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Custom Utilities mimicking Fiori/Bootstrap integration */
+.tile-hover {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tile-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+  border-color: var(--sap-primary) !important;
+}
+
+/* Ensure footer sticks to bottom */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Mobile specific overrides if Bootstrap defaults aren't enough */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

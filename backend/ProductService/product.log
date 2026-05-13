@@ -1,0 +1,97 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:ProductService >---------------------
+[INFO] Building ProductService 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.5:run (default-cli) > test-compile @ ProductService >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ProductService ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ ProductService ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ProductService ---
+[INFO] skip non existing resourceDirectory /Users/abishekvishva/Documents/Projects/Instabuy/backend/ProductService/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ ProductService ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:3.2.5:run (default-cli) < test-compile @ ProductService <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.5:run (default-cli) @ ProductService ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-03-23T21:58:01.716+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] c.e.P.ProductServiceApplication          : Starting ProductServiceApplication using Java 21.0.4 with PID 54132 (/Users/abishekvishva/Documents/Projects/Instabuy/backend/ProductService/target/classes started by abishekvishva in /Users/abishekvishva/Documents/Projects/Instabuy/backend/ProductService)
+2026-03-23T21:58:01.717+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] c.e.P.ProductServiceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-23T21:58:02.616+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-03-23T21:58:02.774+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 155 ms. Found 1 MongoDB repository interface.
+2026-03-23T21:58:03.002+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=340b904b-89b8-38a8-be83-373e1e446918
+2026-03-23T21:58:03.104+05:30  WARN 54132 --- [PRODUCT-SERVICE] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-03-23T21:58:03.105+05:30  WARN 54132 --- [PRODUCT-SERVICE] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-03-23T21:58:03.106+05:30  WARN 54132 --- [PRODUCT-SERVICE] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-03-23T21:58:03.106+05:30  WARN 54132 --- [PRODUCT-SERVICE] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-03-23T21:58:03.107+05:30  WARN 54132 --- [PRODUCT-SERVICE] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-03-23T21:58:03.361+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-03-23T21:58:03.367+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T21:58:03.367+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-23T21:58:03.409+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T21:58:03.410+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1581 ms
+2026-03-23T21:58:03.591+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.2"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "26.3.1"}, "platform": "Java/Oracle Corporation/21.0.4+8-LTS-274"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@706f6d26, com.mongodb.Jep395RecordCodecProvider@3af2f846, com.mongodb.KotlinCodecProvider@6af65f29]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2026-03-23T21:58:03.620+05:30  INFO 54132 --- [PRODUCT-SERVICE] [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21953000}
+2026-03-23T21:58:04.045+05:30  WARN 54132 --- [PRODUCT-SERVICE] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c9bb64b5-0dae-411d-bd34-c330a8785675
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-23T21:58:04.229+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@24fef542, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44ddb518, org.springframework.security.web.context.SecurityContextHolderFilter@7b3c2ae0, org.springframework.security.web.header.HeaderWriterFilter@716ae973, org.springframework.web.filter.CorsFilter@e36bc01, org.springframework.security.web.authentication.logout.LogoutFilter@cf9bd1e, com.example.ProductService.security.JwtAuthenticationFilter@b5c6a30, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41059616, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e93108a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6654ca0d, org.springframework.security.web.access.ExceptionTranslationFilter@61c4cebd, org.springframework.security.web.access.intercept.AuthorizationFilter@28f90752]
+2026-03-23T21:58:04.479+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-03-23T21:58:04.508+05:30  WARN 54132 --- [PRODUCT-SERVICE] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-23T21:58:04.545+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 61324 (http) with context path ''
+2026-03-23T21:58:04.546+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 61324
+2026-03-23T21:58:04.552+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-03-23T21:58:04.630+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-03-23T21:58:04.632+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-23T21:58:04.646+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-03-23T21:58:04.646+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-03-23T21:58:04.646+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-03-23T21:58:04.646+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-03-23T21:58:04.646+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-03-23T21:58:04.646+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-03-23T21:58:04.646+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-03-23T21:58:04.902+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-03-23T21:58:04.904+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-03-23T21:58:04.906+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-23T21:58:04.910+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1774283284910 with initial instances count: 1
+2026-03-23T21:58:04.911+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PRODUCT-SERVICE with eureka with status UP
+2026-03-23T21:58:04.912+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1774283284912, current=UP, previous=STARTING]
+2026-03-23T21:58:04.913+05:30  INFO 54132 --- [PRODUCT-SERVICE] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/"PRODUCT-SERVICE:30960e75-7ff6-4644-af5d-cd6bb0f3f37f": registering service...
+2026-03-23T21:58:04.929+05:30  INFO 54132 --- [PRODUCT-SERVICE] [           main] c.e.P.ProductServiceApplication          : Started ProductServiceApplication in 3.912 seconds (process running for 4.32)
+2026-03-23T21:58:04.942+05:30  INFO 54132 --- [PRODUCT-SERVICE] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/"PRODUCT-SERVICE:30960e75-7ff6-4644-af5d-cd6bb0f3f37f" - registration status: 204
+2026-03-23T22:03:04.657+05:30  INFO 54132 --- [PRODUCT-SERVICE] [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  08:40 min
+[INFO] Finished at: 2026-03-23T22:06:38+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.5:run (default-cli) on project ProductService: Process terminated with exit code: 137 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

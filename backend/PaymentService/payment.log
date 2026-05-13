@@ -1,0 +1,116 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.example:PaymentService:jar:0.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.springframework.boot:spring-boot-starter-webflux:jar -> duplicate declaration of version (?) @ line 74, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ---------------------< com.example:PaymentService >---------------------
+[INFO] Building PaymentService 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.5:run (default-cli) > test-compile @ PaymentService >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ PaymentService ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ PaymentService ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ PaymentService ---
+[INFO] skip non existing resourceDirectory /Users/abishekvishva/Documents/Projects/Instabuy/backend/PaymentService/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ PaymentService ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:3.2.5:run (default-cli) < test-compile @ PaymentService <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.5:run (default-cli) @ PaymentService ---
+[INFO] Attaching agents: []
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-03-23T21:58:02.964+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] c.e.P.PaymentserviceApplication          : Starting PaymentserviceApplication using Java 21.0.4 with PID 54135 (/Users/abishekvishva/Documents/Projects/Instabuy/backend/PaymentService/target/classes started by abishekvishva in /Users/abishekvishva/Documents/Projects/Instabuy/backend/PaymentService)
+2026-03-23T21:58:02.966+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] c.e.P.PaymentserviceApplication          : No active profile set, falling back to 1 default profile: "default"
+2026-03-23T21:58:03.803+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-23T21:58:03.820+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2026-03-23T21:58:04.095+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b3e5f9ca-750e-3a14-9f78-35dab356a4c6
+2026-03-23T21:58:04.281+05:30  WARN 54135 --- [PAYMENT-SERVICE] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-03-23T21:58:04.282+05:30  WARN 54135 --- [PAYMENT-SERVICE] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-03-23T21:58:04.283+05:30  WARN 54135 --- [PAYMENT-SERVICE] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-03-23T21:58:04.284+05:30  WARN 54135 --- [PAYMENT-SERVICE] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-03-23T21:58:04.284+05:30  WARN 54135 --- [PAYMENT-SERVICE] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-03-23T21:58:04.487+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-03-23T21:58:04.496+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T21:58:04.496+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-23T21:58:04.578+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T21:58:04.579+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1555 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2026-03-23T21:58:04.693+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-23T21:58:04.717+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-23T21:58:04.731+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-23T21:58:04.874+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-23T21:58:04.895+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-23T21:58:05.011+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47797401
+2026-03-23T21:58:05.012+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-23T21:58:05.044+05:30  WARN 54135 --- [PAYMENT-SERVICE] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-23T21:58:05.193+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-23T21:58:05.196+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-23T21:58:05.491+05:30  WARN 54135 --- [PAYMENT-SERVICE] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-23T21:58:05.611+05:30  WARN 54135 --- [PAYMENT-SERVICE] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 12679f9b-1a92-40f4-abad-de853286a900
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-03-23T21:58:05.784+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@47eff554, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56ec6ac0, org.springframework.security.web.context.SecurityContextHolderFilter@6a8da5c5, org.springframework.security.web.header.HeaderWriterFilter@3369e2ce, org.springframework.web.filter.CorsFilter@54b35809, org.springframework.security.web.authentication.logout.LogoutFilter@430f0c63, com.example.PaymentService.security.JwtAuthenticationFilter@1953bc95, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f9dbe11, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@17e8caf2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a3383dc, org.springframework.security.web.access.ExceptionTranslationFilter@77925f76, org.springframework.security.web.access.intercept.AuthorizationFilter@7abd75fc]
+2026-03-23T21:58:05.975+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-03-23T21:58:06.003+05:30  WARN 54135 --- [PAYMENT-SERVICE] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-23T21:58:06.023+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 61367 (http) with context path ''
+2026-03-23T21:58:06.024+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 61367
+2026-03-23T21:58:06.026+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-03-23T21:58:06.077+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-03-23T21:58:06.079+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-23T21:58:06.090+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-03-23T21:58:06.090+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-03-23T21:58:06.090+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-03-23T21:58:06.090+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-03-23T21:58:06.090+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-03-23T21:58:06.090+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-03-23T21:58:06.090+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-03-23T21:58:06.248+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-03-23T21:58:06.249+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-03-23T21:58:06.250+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-23T21:58:06.253+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1774283286252 with initial instances count: 1
+2026-03-23T21:58:06.254+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PAYMENT-SERVICE with eureka with status UP
+2026-03-23T21:58:06.254+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1774283286254, current=UP, previous=STARTING]
+2026-03-23T21:58:06.255+05:30  INFO 54135 --- [PAYMENT-SERVICE] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/"PAYMENT-SERVICE:68781dba-d863-44ca-ac8f-478dcf9872c4": registering service...
+2026-03-23T21:58:06.268+05:30  INFO 54135 --- [PAYMENT-SERVICE] [           main] c.e.P.PaymentserviceApplication          : Started PaymentserviceApplication in 3.751 seconds (process running for 4.149)
+2026-03-23T21:58:06.282+05:30  INFO 54135 --- [PAYMENT-SERVICE] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PAYMENT-SERVICE/"PAYMENT-SERVICE:68781dba-d863-44ca-ac8f-478dcf9872c4" - registration status: 204
+2026-03-23T22:03:06.095+05:30  INFO 54135 --- [PAYMENT-SERVICE] [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  09:21 min
+[INFO] Finished at: 2026-03-23T22:07:20+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.5:run (default-cli) on project PaymentService: Process terminated with exit code: 137 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

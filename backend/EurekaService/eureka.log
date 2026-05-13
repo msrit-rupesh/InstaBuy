@@ -1,0 +1,130 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:EurekaService >----------------------
+[INFO] Building EurekaService 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.5:run (default-cli) > test-compile @ EurekaService >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ EurekaService ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ EurekaService ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ EurekaService ---
+[INFO] skip non existing resourceDirectory /Users/abishekvishva/Documents/Projects/Instabuy/backend/EurekaService/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ EurekaService ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:3.2.5:run (default-cli) < test-compile @ EurekaService <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.5:run (default-cli) @ EurekaService ---
+[INFO] Attaching agents: []
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-03-23T21:57:46.591+05:30  INFO 53333 --- [Eureka-server] [           main] c.e.E.EurekaServiceApplication           : Starting EurekaServiceApplication using Java 21.0.4 with PID 53333 (/Users/abishekvishva/Documents/Projects/Instabuy/backend/EurekaService/target/classes started by abishekvishva in /Users/abishekvishva/Documents/Projects/Instabuy/backend/EurekaService)
+2026-03-23T21:57:46.592+05:30  INFO 53333 --- [Eureka-server] [           main] c.e.E.EurekaServiceApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-03-23T21:57:47.589+05:30  INFO 53333 --- [Eureka-server] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=79e05da0-6192-3d7e-95b9-3e419ad07d9f
+2026-03-23T21:57:47.681+05:30  WARN 53333 --- [Eureka-server] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-03-23T21:57:47.682+05:30  WARN 53333 --- [Eureka-server] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-03-23T21:57:47.918+05:30  INFO 53333 --- [Eureka-server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2026-03-23T21:57:47.923+05:30  INFO 53333 --- [Eureka-server] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T21:57:47.935+05:30  INFO 53333 --- [Eureka-server] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-03-23T21:57:48.054+05:30  INFO 53333 --- [Eureka-server] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23T21:57:48.057+05:30  INFO 53333 --- [Eureka-server] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1430 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2026-03-23T21:57:48.788+05:30  INFO 53333 --- [Eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-03-23T21:57:48.789+05:30  INFO 53333 --- [Eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-03-23T21:57:48.893+05:30  INFO 53333 --- [Eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-03-23T21:57:48.893+05:30  INFO 53333 --- [Eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-03-23T21:57:49.458+05:30  WARN 53333 --- [Eureka-server] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-23T21:57:49.473+05:30  INFO 53333 --- [Eureka-server] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-03-23T21:57:49.487+05:30  INFO 53333 --- [Eureka-server] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-03-23T21:57:49.488+05:30  INFO 53333 --- [Eureka-server] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-03-23T21:57:49.493+05:30  INFO 53333 --- [Eureka-server] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1774283269492 with initial instances count: 0
+2026-03-23T21:57:49.512+05:30  INFO 53333 --- [Eureka-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-03-23T21:57:49.513+05:30  INFO 53333 --- [Eureka-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2026-03-23T21:57:49.598+05:30  INFO 53333 --- [Eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-03-23T21:57:49.598+05:30  INFO 53333 --- [Eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-03-23T21:57:49.599+05:30  INFO 53333 --- [Eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-03-23T21:57:49.599+05:30  INFO 53333 --- [Eureka-server] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-03-23T21:57:49.686+05:30  INFO 53333 --- [Eureka-server] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-03-23T21:57:49.691+05:30  INFO 53333 --- [Eureka-server] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-03-23T21:57:49.692+05:30  INFO 53333 --- [Eureka-server] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-03-23T21:57:49.699+05:30  INFO 53333 --- [Eureka-server] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-03-23T21:57:49.735+05:30  INFO 53333 --- [Eureka-server] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-SERVER with eureka with status UP
+2026-03-23T21:57:49.741+05:30  INFO 53333 --- [Eureka-server] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-03-23T21:57:49.743+05:30  INFO 53333 --- [Eureka-server] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-03-23T21:57:49.743+05:30  INFO 53333 --- [Eureka-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-03-23T21:57:49.743+05:30  INFO 53333 --- [Eureka-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-03-23T21:57:49.743+05:30  INFO 53333 --- [Eureka-server] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-03-23T21:57:49.748+05:30  INFO 53333 --- [Eureka-server] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-03-23T21:57:49.749+05:30  INFO 53333 --- [Eureka-server] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path ''
+2026-03-23T21:57:49.749+05:30  INFO 53333 --- [Eureka-server] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2026-03-23T21:57:49.763+05:30  INFO 53333 --- [Eureka-server] [           main] c.e.E.EurekaServiceApplication           : Started EurekaServiceApplication in 3.605 seconds (process running for 3.914)
+2026-03-23T21:57:51.321+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23T21:57:51.321+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-23T21:57:51.322+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-23T21:57:51.440+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PAYMENT-SERVICE/"PAYMENT-SERVICE:eb9e17af-5212-4a7a-af46-adbf34be8407" with status UP (replication=false)
+2026-03-23T21:57:52.043+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PAYMENT-SERVICE/"PAYMENT-SERVICE:eb9e17af-5212-4a7a-af46-adbf34be8407" with status UP (replication=true)
+2026-03-23T21:58:04.575+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/"ORDER-SERVICE:49fa192f-23f7-45ef-b772-3beed3b5e36b" with status UP (replication=false)
+2026-03-23T21:58:04.941+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/"PRODUCT-SERVICE:30960e75-7ff6-4644-af5d-cd6bb0f3f37f" with status UP (replication=false)
+2026-03-23T21:58:05.085+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/"ORDER-SERVICE:49fa192f-23f7-45ef-b772-3beed3b5e36b" with status UP (replication=true)
+2026-03-23T21:58:05.087+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/"PRODUCT-SERVICE:30960e75-7ff6-4644-af5d-cd6bb0f3f37f" with status UP (replication=true)
+2026-03-23T21:58:05.445+05:30  INFO 53333 --- [Eureka-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService with status UP (replication=false)
+2026-03-23T21:58:05.464+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService with status DOWN (replication=false)
+2026-03-23T21:58:05.479+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService (replication=false)
+2026-03-23T21:58:05.981+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService with status DOWN (replication=true)
+2026-03-23T21:58:05.981+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService (replication=true)
+2026-03-23T21:58:06.281+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PAYMENT-SERVICE/"PAYMENT-SERVICE:68781dba-d863-44ca-ac8f-478dcf9872c4" with status UP (replication=false)
+2026-03-23T21:58:06.294+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INVENTORY-SERVICE/"INVENTORY-SERVICE:78c87364-e139-4d98-9583-53b307b064a4" with status UP (replication=false)
+2026-03-23T21:58:06.543+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/"USER-SERVICE:f3eb43c9-ecc8-4aea-8792-ac0408163cfe" with status UP (replication=false)
+2026-03-23T21:58:06.770+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/"ORDER-SERVICE:81fb5954-1462-400b-89c7-cadeaeeb48ce" with status UP (replication=false)
+2026-03-23T21:58:06.792+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PAYMENT-SERVICE/"PAYMENT-SERVICE:68781dba-d863-44ca-ac8f-478dcf9872c4" with status UP (replication=true)
+2026-03-23T21:58:06.792+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance INVENTORY-SERVICE/"INVENTORY-SERVICE:78c87364-e139-4d98-9583-53b307b064a4" with status UP (replication=true)
+2026-03-23T21:58:06.792+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/"USER-SERVICE:f3eb43c9-ecc8-4aea-8792-ac0408163cfe" with status UP (replication=true)
+2026-03-23T21:58:06.792+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/"ORDER-SERVICE:81fb5954-1462-400b-89c7-cadeaeeb48ce" with status UP (replication=true)
+2026-03-23T21:58:09.532+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService with status DOWN (replication=false)
+2026-03-23T21:58:10.042+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService with status DOWN (replication=true)
+2026-03-23T21:58:14.563+05:30  INFO 53333 --- [Eureka-server] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService (replication=false)
+2026-03-23T21:58:15.071+05:30  WARN 53333 --- [Eureka-server] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: cancel failed because Lease is not registered for: APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService
+2026-03-23T21:58:15.072+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-4] c.n.eureka.resources.InstanceResource    : Not Found (Cancel): APIGATEWAYSERVICE - 192.168.29.204:ApiGatewayService
+2026-03-23T21:58:15.072+05:30  WARN 53333 --- [Eureka-server] [et_localhost-14] c.n.eureka.cluster.ReplicationTask       : The replication of task APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService:Cancel@localhost failed with response code 404
+2026-03-23T21:58:15.073+05:30  WARN 53333 --- [Eureka-server] [et_localhost-14] c.netflix.eureka.cluster.PeerEurekaNode  : APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService:Cancel@localhost: missing entry.
+2026-03-23T21:58:17.367+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService with status UP (replication=false)
+2026-03-23T21:58:17.875+05:30  INFO 53333 --- [Eureka-server] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService with status UP (replication=true)
+2026-03-23T21:58:49.745+05:30  INFO 53333 --- [Eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-23T21:59:49.750+05:30  INFO 53333 --- [Eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-03-23T22:00:49.755+05:30  INFO 53333 --- [Eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-03-23T22:01:49.756+05:30  INFO 53333 --- [Eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-03-23T22:02:49.761+05:30  INFO 53333 --- [Eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-03-23T22:03:49.763+05:30  INFO 53333 --- [Eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-03-23T22:04:49.767+05:30  INFO 53333 --- [Eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-03-23T22:05:49.773+05:30  INFO 53333 --- [Eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-03-23T22:06:49.775+05:30  INFO 53333 --- [Eureka-server] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  09:24 min
+[INFO] Finished at: 2026-03-23T22:07:08+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.5:run (default-cli) on project EurekaService: Process terminated with exit code: 137 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

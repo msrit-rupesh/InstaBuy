@@ -1,0 +1,141 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.example:ApiGatewayService >--------------------
+[INFO] Building ApiGatewayService 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.11:run (default-cli) > test-compile @ ApiGatewayService >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ApiGatewayService ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ ApiGatewayService ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ ApiGatewayService ---
+[INFO] skip non existing resourceDirectory /Users/abishekvishva/Documents/Projects/Instabuy/backend/ApiGatewayService/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ ApiGatewayService ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.5.11:run (default-cli) < test-compile @ ApiGatewayService <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.11:run (default-cli) @ ApiGatewayService ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.11)
+
+2026-03-23T21:58:02.771+05:30  INFO 54134 --- [ApiGatewayService] [           main] c.e.A.ApiGatewayServiceApplication       : Starting ApiGatewayServiceApplication using Java 21.0.4 with PID 54134 (/Users/abishekvishva/Documents/Projects/Instabuy/backend/ApiGatewayService/target/classes started by abishekvishva in /Users/abishekvishva/Documents/Projects/Instabuy/backend/ApiGatewayService)
+2026-03-23T21:58:02.772+05:30  INFO 54134 --- [ApiGatewayService] [           main] c.e.A.ApiGatewayServiceApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-03-23T21:58:03.802+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=17a5e1c8-1547-331c-be90-d5f600dee9f1
+2026-03-23T21:58:04.004+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-23T21:58:04.014+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23T21:58:04.014+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-23T21:58:04.492+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.gateway.config.GatewayProperties   : Routes supplied from Gateway Properties: [RouteDefinition{id='EUREKA', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/eureka}}], filters=[FilterDefinition{name='SetPath', args={_genkey_0=/}}], uri=http://localhost:8761, order=0, metadata={}, enabled=true}, RouteDefinition{id='EUREKA-STATIC-RESOURCES', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/eureka/**}}], filters=[], uri=http://localhost:8761, order=0, metadata={}, enabled=true}, RouteDefinition{id='USER-SERVICE', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/auth/**}}], filters=[], uri=lb://USER-SERVICE, order=0, metadata={}, enabled=true}, RouteDefinition{id='PRODUCT-SERVICE', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/products/**}}], filters=[], uri=lb://PRODUCT-SERVICE, order=0, metadata={}, enabled=true}, RouteDefinition{id='INVENTORY-SERVICE', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/inventory/**}}], filters=[], uri=lb://INVENTORY-SERVICE, order=0, metadata={}, enabled=true}, RouteDefinition{id='ORDER-SERVICE', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/orders/**}}], filters=[], uri=lb://ORDER-SERVICE, order=0, metadata={}, enabled=true}, RouteDefinition{id='PAYMENT-SERVICE', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/payment/**, _genkey_1=/api/stripe/**}}], filters=[], uri=lb://PAYMENT-SERVICE, order=0, metadata={}, enabled=true}]
+2026-03-23T21:58:04.614+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2026-03-23T21:58:04.614+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2026-03-23T21:58:04.614+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2026-03-23T21:58:04.614+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2026-03-23T21:58:04.614+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2026-03-23T21:58:04.614+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2026-03-23T21:58:04.614+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2026-03-23T21:58:04.614+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2026-03-23T21:58:04.614+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2026-03-23T21:58:04.614+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2026-03-23T21:58:04.614+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2026-03-23T21:58:04.614+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-03-23T21:58:04.614+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2026-03-23T21:58:04.614+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-03-23T21:58:04.784+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-03-23T21:58:04.959+05:30  INFO 54134 --- [ApiGatewayService] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-03-23T21:58:04.972+05:30  WARN 54134 --- [ApiGatewayService] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-23T21:58:05.009+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-03-23T21:58:05.023+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-03-23T21:58:05.026+05:30  INFO 54134 --- [ApiGatewayService] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-23T21:58:05.031+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-03-23T21:58:05.031+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-03-23T21:58:05.031+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-03-23T21:58:05.031+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-03-23T21:58:05.031+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-03-23T21:58:05.031+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-03-23T21:58:05.031+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-03-23T21:58:05.350+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-03-23T21:58:05.351+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-03-23T21:58:05.352+05:30  INFO 54134 --- [ApiGatewayService] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-23T21:58:05.354+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1774283285353 with initial instances count: 1
+2026-03-23T21:58:05.357+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APIGATEWAYSERVICE with eureka with status UP
+2026-03-23T21:58:05.358+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1774283285358, current=UP, previous=STARTING]
+2026-03-23T21:58:05.361+05:30  INFO 54134 --- [ApiGatewayService] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService: registering service...
+2026-03-23T21:58:05.388+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition EUREKA applying {_genkey_0=/eureka} to Path
+2026-03-23T21:58:05.414+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition EUREKA applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin RETAIN_UNIQUE} to DedupeResponseHeader
+2026-03-23T21:58:05.426+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition EUREKA applying filter {_genkey_0=/} to SetPath
+2026-03-23T21:58:05.430+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: EUREKA
+2026-03-23T21:58:05.430+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition EUREKA-STATIC-RESOURCES applying {_genkey_0=/eureka/**} to Path
+2026-03-23T21:58:05.432+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition EUREKA-STATIC-RESOURCES applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin RETAIN_UNIQUE} to DedupeResponseHeader
+2026-03-23T21:58:05.433+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: EUREKA-STATIC-RESOURCES
+2026-03-23T21:58:05.433+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition USER-SERVICE applying {_genkey_0=/auth/**} to Path
+2026-03-23T21:58:05.433+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition USER-SERVICE applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin RETAIN_UNIQUE} to DedupeResponseHeader
+2026-03-23T21:58:05.434+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: USER-SERVICE
+2026-03-23T21:58:05.434+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition PRODUCT-SERVICE applying {_genkey_0=/api/products/**} to Path
+2026-03-23T21:58:05.434+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition PRODUCT-SERVICE applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin RETAIN_UNIQUE} to DedupeResponseHeader
+2026-03-23T21:58:05.435+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: PRODUCT-SERVICE
+2026-03-23T21:58:05.435+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition INVENTORY-SERVICE applying {_genkey_0=/api/inventory/**} to Path
+2026-03-23T21:58:05.436+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition INVENTORY-SERVICE applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin RETAIN_UNIQUE} to DedupeResponseHeader
+2026-03-23T21:58:05.437+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: INVENTORY-SERVICE
+2026-03-23T21:58:05.437+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition ORDER-SERVICE applying {_genkey_0=/api/orders/**} to Path
+2026-03-23T21:58:05.438+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition ORDER-SERVICE applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin RETAIN_UNIQUE} to DedupeResponseHeader
+2026-03-23T21:58:05.438+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: ORDER-SERVICE
+2026-03-23T21:58:05.438+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition PAYMENT-SERVICE applying {_genkey_0=/api/payment/**, _genkey_1=/api/stripe/**} to Path
+2026-03-23T21:58:05.439+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition PAYMENT-SERVICE applying filter {_genkey_0=Access-Control-Allow-Credentials Access-Control-Allow-Origin RETAIN_UNIQUE} to DedupeResponseHeader
+2026-03-23T21:58:05.440+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: PAYMENT-SERVICE
+2026-03-23T21:58:05.446+05:30 DEBUG 54134 --- [ApiGatewayService] [           main] o.s.c.g.filter.GatewayMetricsFilter      : New routes count: 7
+2026-03-23T21:58:05.449+05:30  INFO 54134 --- [ApiGatewayService] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService - registration status: 204
+2026-03-23T21:58:05.458+05:30  INFO 54134 --- [ApiGatewayService] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application APIGATEWAYSERVICE with eureka with status DOWN
+2026-03-23T21:58:05.459+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1774283285459, current=DOWN, previous=UP]
+2026-03-23T21:58:05.459+05:30  WARN 54134 --- [ApiGatewayService] [           main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-23T21:58:05.459+05:30  INFO 54134 --- [ApiGatewayService] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService: registering service...
+2026-03-23T21:58:05.464+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-03-23T21:58:05.467+05:30  INFO 54134 --- [ApiGatewayService] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService - registration status: 204
+2026-03-23T21:58:05.468+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-03-23T21:58:05.481+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAYSERVICE/192.168.29.204:ApiGatewayService - deregister  status: 200
+2026-03-23T21:58:05.481+05:30  INFO 54134 --- [ApiGatewayService] [           main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-03-23T21:58:05.502+05:30  INFO 54134 --- [ApiGatewayService] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-23T21:58:05.513+05:30 ERROR 54134 --- [ApiGatewayService] [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.867 s
+[INFO] Finished at: 2026-03-23T21:58:05+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.5.11:run (default-cli) on project ApiGatewayService: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
